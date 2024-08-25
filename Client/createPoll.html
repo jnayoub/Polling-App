@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polling Application</title>
+    <script src="Client/js/CreatePoll.js" defer="true"></script>
+    <link href="Client/styles/index.css" rel="stylesheet">
+    <!-- Import Ant Design-->
+    <link href="https://cdn.jsdelivr.net/npm/antd/dist/antd.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/antd/dist/antd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Polling Application</h1>
+        <div id="create-poll">
+            <h2>Create a Poll</h2>
+            <form id="poll-form">
+                <div class="form-group">
+                    <label for="question">Question</label>
+                    <input type="text" id="question" class="form-control" required>
+                </div>
+                <div id="options-container">
+                    <div class="form-group">
+                        <label for="option-1">Option 1</label>
+                        <input type="text" id="option-1" class="form-control" required>
+                    </div>
+                </div>
+                <div id="buttonContainer">
+                <button type="button" id="add-option">Add Option</button>
+                <button type="submit">Create Poll</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
